@@ -1,15 +1,16 @@
 /* 
-@version 1.0
+@version 7.0
 @author Vedh
  */
-class HelloApp{
-	public static void main(String[] args ){
-		
-		// This is "Hello App Program"
-		
-		String msg = "This is Dev Branch";
-		
-		System.out.println(msg);
-		
-	}
+public class HelloApp {
+
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
+        } 
+        else {
+            String names = String.join(", ", args);
+            System.out.println("Hello " + names);
+        }
+    }
 }
